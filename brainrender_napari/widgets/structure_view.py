@@ -2,17 +2,15 @@
 model and view classes for the structures that form part of an atlas.
 The view is only visible if the atlas is downloaded."""
 
-
 from brainglobe_atlasapi.list_atlases import get_downloaded_atlases
-from qtpy.QtCore import QModelIndex, Qt, Signal
+from qtpy.QtCore import QModelIndex, Signal
 from qtpy.QtWidgets import QTreeView, QWidget
-
-from brainrender_napari.utils.load_user_data import (
-    read_atlas_structures_from_file,
-)
 
 from brainrender_napari.data_models.structure_tree_model import (
     StructureTreeModel,
+)
+from brainrender_napari.utils.load_user_data import (
+    read_atlas_structures_from_file,
 )
 
 
